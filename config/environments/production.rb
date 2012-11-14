@@ -79,7 +79,7 @@ BetacubeEu::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
-  GA.tracker = "UA-35751778-1"
+  GA.tracker = "UA-29470546-1"
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
