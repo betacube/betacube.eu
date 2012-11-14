@@ -1,0 +1,40 @@
+en:
+  activerecord:
+    models:
+    attributes:
+      user:
+        email: "Email"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "cannot be blank!"
+  models:
+    user:
+      fields:
+        email: "Email"
+        password: "Password"
+        firstname: "Firstname"
+        lastname: "Lastname"
+      forms:
+        signup:
+          title: "Signup"
+          submit: "Signup!"
+          password: "New password"
+          email_control: "Re-enter Email"
+          error: "Could not sign you up."
+          success: "Successfully signed up!"
+        login:
+          title: "Login"
+          submit: "Login!"
+          error: "Could not log you in."
+          success: "Welcome back!"
+        logout:
+          title: "Logout"
+          submit: "Logout!"
+          success: "Bye Bye. See you soon!"
+        shared:
+          not_yet_a_member: "Not yet a member?"
+          signup_now: "Sign up now!"
+          or_signup_now: " or signup now!"

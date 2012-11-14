@@ -1,0 +1,23 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar.collapsed{"data-toggle" => "collapse", "data-target" => ".navbar-responsive-collapse"}
+        %span.icon-bar= ""
+        %span.icon-bar= ""
+        %span.icon-bar= ""
+      .nav-collapse.navbar-responsive-collapse.collapse
+        %ul.nav
+          - @menu.each do |menu_item|
+            - if menu_item.second.size > 0
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  = menu_item.first.to_s.titleize
+                  %b.caret
+                %ul.dropdown-menu
+                  - menu_item.second.each do |menu_sub_item|
+                    %li
+                      = link_to menu_sub_item.to_s.titleize, eval("#{menu_item.first.to_s}_#{menu_sub_item.to_s}_path")
+            - else
+              %li
+                = link_to menu_item.first.to_s.titleize, eval("#{menu_item.first.to_s}_path")
+  

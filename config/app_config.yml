@@ -1,0 +1,9 @@
+development:
+  techup:
+    endpoint: http://www.techup.lu/api/user?id=
+    user: cbuchler
+    
+production:
+  techup:
+    endpoint: http://www.techup.lu/api/user?id=
+    user: cbuchler

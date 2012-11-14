@@ -1,0 +1,44 @@
+- @page_title = "Contact"
+
+.row-fluid.pages
+  .span9
+    %p= "Do not hesitate to contact us using our simple contact form below:"
+    %br
+
+    - if flash[:success] || flash[:error]
+      .alert{:class => "alert-#{flash[:success] ? "success" : flash[:error] ? "error" : ""}"}
+        = flash[:success] || flash[:error]
+
+    = form_for :contact_form, :url => contact_submit_path, :html => {:class => "form-horizontal"} do |f|
+      .control-group
+        %label.control-label= "Firstname"
+        .controls
+          = f.text_field :firstname, :placeholder => "Firstname"
+      .control-group
+        %label.control-label= "Lastname"
+        .controls
+          = f.text_field :lastname, :placeholder => "Lastname"
+      .control-group
+        %label.control-label= "Email"
+        .controls
+          = f.text_field :email, :placeholder => "Email"
+      .control-group
+        %label.control-label= "Message"
+        .controls
+          = f.text_area :message, :placeholder => "Message", :rows => 7
+      .control-group
+        .controls
+          = f.button "Submit", :class => "btn"
+  .span3.contact_members
+    %h4= "Georges Jentgen, President"
+    %p.phone= " (+352) 691 11 05 82"
+    %p.twitter= link_to "@polysign", "http://twitter.com/polysign"
+    %p.email= link_to "georges@betacube.eu", "georges@betacube.eu"
+    %h4= "Charel Buchler, President"
+    %p.phone= " (+352) 621 46 60 57"
+    %p.twitter= link_to "@cbuchler", "http://twitter.com/cbuchler"
+    %p.email= link_to "charel@betacube.eu", "charel@betacube.eu"
+    %h4= "Christian Biever, Treasurer"
+    %p.phone= " (+352) 661 55 45 20"
+    %p.twitter= link_to "@ChristianBiever", "http://twitter.com/ChristianBiever"
+    %p.email= link_to "christian@betacube.eu", "christian@betacube.eu"

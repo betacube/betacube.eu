@@ -1,0 +1,46 @@
+@import "twitter/bootstrap/bootstrap";
+
+body { 
+	padding-top: 60px;
+}
+
+@import "twitter/bootstrap/responsive";
+
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+@fontAwesomeEotPath: '/assets/fontawesome-webfont.eot';
+@fontAwesomeWoffPath: '/assets/fontawesome-webfont.woff';
+@fontAwesomeTtfPath: '/assets/fontawesome-webfont.ttf';
+@fontAwesomeSvgPath: '/assets/fontawesome-webfont.svg';
+
+@import "fontawesome";
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-fixed-top {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;  
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;  
+  }
+}

@@ -1,0 +1,25 @@
+- @page_title = "Show & Tell"
+
+.row-fluid.pages
+  .span9
+    %h4= "Show & Tell"
+    %p= "Our Show & Tell events are our most precious events. We take a lot of time and effort in organizing those events. The concept is simple: Interesting and inspiring talks held in a room filled with creative people."
+    %p= "Our goal is to offer our community the possibility to present and listen to other members or professionals from Luxembourg and the greater region. We also try to get some international speakers in the mix."
+    %p= "At the end of the night, we want our members to be inspired or have learned a thing or two. Maybe take something with them home or to work and use newly obtained knowledge in their daily work."
+  .span3
+    = render "shared/show_and_tell/menu", :show_home => false
+
+.marketing
+  .row-fluid
+    .span4
+      = image_tag "show_and_tell/talks.jpg"
+      %h2= "Talks"
+      %p= "Inspiring and informative talks and presentations in front of a live audience about technology, design, marketing and entrepreneurship."
+    .span4
+      = image_tag "show_and_tell/pitches.jpg"
+      %h2= "Pitches"
+      %p= "Fast and short pitches about a project, startup, code or anything else one wants to share with the community."
+    .span4
+      = image_tag "show_and_tell/posters.jpg"
+      %h2= "Posters"
+      %p= "Reserved area for paper posters for small presentations and discussions with other community members."

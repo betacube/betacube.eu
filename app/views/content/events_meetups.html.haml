@@ -1,0 +1,23 @@
+- @page_title = "Meetups"
+
+.row-fluid.pages
+  .span6
+    %h4= "Meetups"
+    %p= "Meetups are casual get-togethers planned a couple of weeks in advance. The goal of the meetups is to do networking and having a good time."
+    %p= "There is no schedule and no moderation. Everyone is invited to join for a couple of beers at a local pub."
+    %p
+      :plain
+        The last few Meetups were held at the <strong>Independent Cafe</strong> in Luxembourg City.
+    %p
+      :plain
+        This place feels like home to us. Partly because we held most of our early meetings at the <strong>Independent Cafe</strong>.
+    %p= link_to "Independent Café", "http://de-de.facebook.com/pages/INDEPENDENT-Café/143388437066"
+  .span6
+    %h4= "Upcoming Meetups"
+    %ul.meetups
+      - @meetups.second.compact.each do |meetup|
+        = render "shared/meetups/meetup", :meetup => meetup
+    %h4= "Past Meetups"
+    %ul.meetups
+      - @meetups.first.compact.each do |meetup|
+        = render "shared/meetups/meetup", :meetup => meetup

@@ -1,0 +1,70 @@
+- @page_title = "Community for Designers, Developers and Startups in the Luxembourg area"
+
+.container
+  .marketing
+    %h1= "The Betacube Community."
+    .row-fluid
+      .span4
+        = image_tag "community/designers.jpg"
+        %h2= "Designers"
+        %p
+          = "Designing interfaces for the web of the future. Sketching mobile apps that will change the world. Expressing their feelings through stunning and creative pieces of art."
+      .span4
+        = image_tag "community/developers.jpg"
+        %h2= "Developers"
+        %p
+          = "Electifying and putting life into awesome applications. Implementing the most complex business logics to be used by clients and colleagues on the web and mobile."
+      .span4
+        = image_tag "community/startups.jpg"
+        %h2= "Startups"
+        %p
+          = "Starting small with breath-taking ideas. Reinventing old habits and revolutionising the way we work. Giving us great products & services to fix common problems."
+  .marketing
+    .row-fluid
+      .span12
+        %p= "The Betacube association seeks to build a great and active community. We invite everyone to join us at our events to network and to share knowledge."
+        .tags.hidden-phone.hidden-tablet
+          %span.label.label-success= "Designers"
+          %span.label.label-important= "Illustrators"
+          %span.label.label-info= "Developers"
+          %span.label.label-warning= "Startups"
+          %span.label.label-success= "Entrepreneurs"
+          %span.label= "Marketing Experts"
+          %span.label.label-important= "Technology Envangelists"
+          %span.label.label-inverse= "Web Nerds & Geeks"
+        .tags.hidden-desktop
+          %p.label.label-success= "Designers"
+          %p.label.label-important= "Illustrators"
+          %p.label.label-info= "Developers"
+          %p.label.label-warning= "Startups"
+          %p.label.label-success= "Entrepreneurs"
+          %p.label= "Marketing Experts"
+          %p.label.label-important= "Technology Envangelists"
+          %p.label.label-inverse= "Web Nerds & Geeks"
+%hr.soften
+.container
+  .marketing
+    %h1= "What's going on"
+    %p= "Latest news and happenings."
+  .row-fluid.news
+    .span4
+      %h4= "New Website"
+      %p.date= "13.11.2012"
+      .news_content
+        %p= "We finally got our new website ready. We still need to do some fine tuning here and there. But we are proud to have it online."
+        %p= "This website is built to stay and will be updated regularly. There is also a roadmap coming soon to let you all know what features you can expect to come in the near future."
+    .span4
+      %h4= "Show & Tell Videos"
+      %p.date= "12.11.2012"
+      .news_content
+        %p= "We finally have some of our videos from the last Show & Tell event online."
+        %p= "You can check them out on our Youtube channel or on the Show & Tell page."
+      %p= link_to "Show & Tell 06.09.2012 @ The Hub", events_show_and_tell_past_20120906_path, :class => "btn btn-large btn-success btn-spanned"
+      %p= link_to "Betacube Youtube Channel", "http://www.youtube.com/user/betacubeeu", :class => "btn btn-large btn-success btn-spanned"
+    .span4
+      %h4= "Student's Fair 2012"
+      %p.date= "09.09.2012"
+      .news_content
+        %p= "Betacube will be present at this year's Student's Fair at the LuxExpo at Kirchberg."
+        %p= "We will support the Luxembourgish government on their booth to inform young students about web-related professions"
+      %p= link_to "Student's Fair 2012 @ The LuxExpo", events_students_fair_path, :class => "btn btn-large btn-success btn-spanned"

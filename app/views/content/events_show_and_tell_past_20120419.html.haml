@@ -1,0 +1,38 @@
+- @page_title = "Show & Tell"
+- @page_sub_title = "Show & Tell @ Abbaye Neumünster"
+
+.row-fluid.pages
+  .span9
+    %h4= "19.04.2012"
+    %p= "Our first Betacube event was a total blast. We knew we could get some people together into one single room and have up to 5 speakers. But we where overwhelmed how fast we got sold out."
+    %p= "Within 8 hours we sold all available seats a few weeks prior the event. That's when we finally realised how serious this was."
+    %hr.soften.small
+    .row-fluid
+      .span3
+        %h4= "Location"
+        %ul.location
+          %li= "Abbaye Neumünster"
+          %li= "Luxembourg City"
+      .span8
+        %h4= "Speakers"
+        %dl.speakers
+          %dt= "Georges Jentgen"
+          %dd= "Deploying Rails Application with Capistrano"
+          %dt= "Regis Kuckaertz"
+          %dd= "Achille, the Turtle and the Website of Tomorrow"
+          %dt= "Michel Hoffmann"
+          %dd= "Digital Marketing and small companies"
+          %dt= "Hervé Weitz"
+          %dd= "Support of startups in Luxembourg"
+          %dt= "Per-Frederik Hagermark"
+          %dd= "Ignite Talk #1: Co-working, it's the community stupid!"
+          %dt= "Gilles Poules"
+          %dd= "Ignite Talk #2: Presentation of his startup Yappoint"
+    %hr.soften.small
+    %h4= "Images"
+    %ul.thumbnails
+      - Dir.glob('app/assets/images/show_and_tell/20120419/*').each do |image|
+        %li= link_to image_tag(image.gsub("app/assets/images/", ""), :size => "160x160"), asset_path(image.gsub("app/assets/images/", "")), :rel => "lightbox[show_and_tell]"
+
+  .span3
+    = render "shared/show_and_tell/menu", :show_home => true

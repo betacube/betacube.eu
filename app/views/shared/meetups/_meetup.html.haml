@@ -1,0 +1,13 @@
+%li
+  %h4= link_to meetup.title, meetup.url, :alt => meetup.description
+  %p.date= meetup.date 
+  - unless meetup.attendees.empty?
+    %ul.attendees
+      %li= "Attending"
+      - meetup.attendees.each do |attendee|
+        %li= link_to attendee, meetup.url_to_attendee(attendee)
+  - unless meetup.tags.empty?
+    %ul.tags
+      %li= "Tags"
+      - meetup.tags.each do |tag|
+        %li= tag

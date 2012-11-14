@@ -1,0 +1,39 @@
+- @page_title = "Show & Tell"
+- @page_sub_title = "Show & Tell @ The HUB"
+
+.row-fluid.pages
+  .span9
+    %h4= "06.09.2012"
+    %p= "This was our second Show & Tell event. This time we held it at The HUB in Luxembourg city. And again, the seats were sold out within hours. It was amazing."
+    %hr.soften.small
+    .row-fluid
+      .span3
+        %h4= "Location"
+        %ul.location
+          %li= "The HUB Luxembourg"
+          %li= "Luxembourg City"
+      .span9
+        %h4= "Speakers"
+        %dl.speakers
+          %dt= "Mik a.k.a Omniscent Being"
+          %dd= "Just because it's traced, doesn't mean you're cheating"
+          %dt= "Thorben Grosser"
+          %dd= "Why marketing should not exist"
+          %dt= "Michel Weimersirch"
+          %dd= "Introduction to Symfony2"
+          %dt= "Sylvia Mann"
+          %dd= "1,2,3 GO Business initiative"
+    %hr.soften.small
+    %h4= "Videos"
+    %ul
+      %li= link_to "Just because it's traced, doesn't mean you're cheating", "http://www.youtube.com/watch?v=XpBUMSS6dM0&feature=plcp"
+      %li= link_to "Why marketing should not exist", "http://www.youtube.com/watch?v=ONqJ6QjuQRY&feature=plcp"
+      %li= link_to "1,2,3 Go", "http://www.youtube.com/watch?v=NGGpl9k2ZWw&feature=plcp"
+    %hr.soften.small
+    %h4= "Images"
+    %ul.thumbnails
+      - Dir.glob('app/assets/images/show_and_tell/20120906/*').each do |image|
+        %li= link_to image_tag(image.gsub("app/assets/images/", ""), :size => "160x160"), asset_path(image.gsub("app/assets/images/", "")), :rel => "lightbox[show_and_tell]"
+
+  .span3
+    = render "shared/show_and_tell/menu", :show_home => true
