@@ -230,6 +230,7 @@ DEPENDENCIES
   hpricot (>= 0.8.6)
   jquery-rails
   launchy (>= 2.1.2)
+  pg
   rails (= 3.2.11)
   rails_config
   rspec-rails (>= 2.11.0)
