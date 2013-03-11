@@ -65,6 +65,7 @@ GEM
       rspec (~> 2.0)
     erubis (2.7.0)
     eventmachine (1.0.0)
+    excon (0.16.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (4.0.0)
@@ -86,6 +87,14 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (~> 3.1)
       railties (>= 3.1, < 4.1)
+    heroku (2.35.0)
+      heroku-api (~> 0.3.7)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.8)
+      excon (~> 0.16.10)
     hike (1.2.1)
     hpricot (0.8.6)
     i18n (0.6.1)
@@ -110,6 +119,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    netrc (0.7.7)
     nokogiri (1.5.5)
     pg (0.14.1)
     polyglot (0.3.3)
@@ -140,6 +150,8 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.11.0)
       rspec-core (~> 2.11.0)
       rspec-expectations (~> 2.11.0)
@@ -211,6 +223,7 @@ DEPENDENCIES
   google-analytics-rails
   haml (>= 3.1.7)
   haml-rails (>= 0.3.5)
+  heroku
   hpricot (>= 0.8.6)
   jquery-rails
   launchy (>= 2.1.2)
