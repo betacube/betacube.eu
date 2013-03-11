@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem "rails", "3.2.11"
+gem "pg"
 gem "jquery-rails"
 gem "thin", ">= 1.4.1"
 gem "haml", ">= 3.1.7"
@@ -16,10 +17,6 @@ group :assets do
   gem "sass-rails",   "~> 3.2.3"
   gem "coffee-rails", "~> 3.2.1"
   gem "uglifier", ">= 1.0.3"
-end
-
-group :production do
-  gem "pg"
 end
 
 group :test do
