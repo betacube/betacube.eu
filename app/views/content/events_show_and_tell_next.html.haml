@@ -1,21 +1,36 @@
 - @page_title = "Show & Tell"
-- @page_sub_title = "Show & Tell @ Technoport"
+- @page_sub_title = "Show & Tell @ The Technoport"
 
 .row-fluid.pages
   .span9
-    %h4= "17.01.2013"
-    %p= "Our next Show & Tell event is being planned... stay tuned"
+    %h4= "18.04.2013"
     %hr.soften.small
     .row-fluid
       .span3
         %h4= "Location"
         %ul.location
           %li= "Technoport"
-          %li= "Belval / Esch-sur-Alzette"
-      .span9
+          %li= "Esch/Belval"
+      .span8
         %h4= "Speakers"
         %dl.speakers
-          %dt= "..."
+          %dt= "Georges Jentgen"
+          %dd= "Deploying Rails Application with Capistrano"
+          %dt= "Regis Kuckaertz"
+          %dd= "Achille, the Turtle and the Website of Tomorrow"
+          %dt= "Michel Hoffmann"
+          %dd= "Digital Marketing and small companies"
+          %dt= "Hervé Weitz"
+          %dd= "Support of startups in Luxembourg"
+          %dt= "Per-Frederik Hagermark"
+          %dd= "Ignite Talk #1: Co-working, it's the community stupid!"
+          %dt= "Gilles Poules"
+          %dd= "Ignite Talk #2: Presentation of his startup Yappoint"
+    %hr.soften.small
+    %h4= "Images"
+    %ul.thumbnails
+      - Dir.glob('app/assets/images/show_and_tell/20120419/*').each do |image|
+        %li= link_to image_tag(image.gsub("app/assets/images/", ""), :size => "160x160"), asset_path(image.gsub("app/assets/images/", "")), :rel => "lightbox[show_and_tell]"
 
   .span3
     = render "shared/show_and_tell/menu", :show_home => true

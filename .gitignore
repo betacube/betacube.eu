@@ -75,3 +75,6 @@ pickle-email-*.html
 
 # vim artifacts
 **.swp
+
+# C9.io
+/.c9revisions/

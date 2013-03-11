@@ -12,6 +12,7 @@ gem "twitter-bootstrap-rails"
 gem "font-awesome-rails"
 gem "google-analytics-rails"
 gem "heroku"
+gem "activerecord-postgresql-adapter"
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"
