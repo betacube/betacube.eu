@@ -10,11 +10,16 @@ gem "rails_config"
 gem "twitter-bootstrap-rails"
 gem "font-awesome-rails"
 gem "google-analytics-rails"
+gem "activerecord-postgresql-adapter"
 
 group :assets do
   gem "sass-rails",   "~> 3.2.3"
   gem "coffee-rails", "~> 3.2.1"
   gem "uglifier", ">= 1.0.3"
+end
+
+group :production do
+  gem "pg"
 end
 
 group :test do
