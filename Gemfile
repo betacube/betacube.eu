@@ -18,6 +18,10 @@ group :assets do
   gem "uglifier", ">= 1.0.3"
 end
 
+group :production do
+  gem "pg"
+end
+
 group :test do
   gem "factory_girl_rails", ">= 4.0.0"
   gem "faker"
