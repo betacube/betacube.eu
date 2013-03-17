@@ -4,19 +4,69 @@
 .row-fluid.pages
   .span9
     %h4= "18.04.2013"
-    %p= "Save the date! We are heading towards our next Show & Tell event. Taking place at the Technoport in Esch/Belval, this will be our biggest event ever."
+    %p
+      :plain
+        Betacube is holding their 3rd <strong>Show & Tell</strong> event at the <strong>Technoport</strong> (Esch/Belval) at the <strong>18th of April 2013</strong>. It's the third edition of this community event giving the community a platform to present their self and connect with like minded web professionals from Luxembourg and the greater region.
+        The event will be packed by presentations held by community members and supporters. There will be plenty of <strong>food, drinks and time for networking</strong> during the event.
     %hr.soften.small
     .row-fluid
+      .span8
+        %h4= "Presentations"
+        %dl.speakers
+          %dt= "Diego Debiasio"
+          %dd= "Introducing the Technoport"
+
+          %dt= "Hervé Weitz"
+          %dd= "Sell Your Mess"
+
+          %dt= "tba"
+          %dd= "To be announced"
+
+          %dt= "tba"
+          %dd= "To be announced"
+
+          %dt= "tba"
+          %dd= "To be announced"
+
+          %dt= "Diego Debiasio"
+          %dd= "Fab Lab Luxembourg"
+
+      .span3
+        %h4= "Registration"
+        %ul.location
+          %li= "Technoport, Esch/Belval"
+          %li= "9 avenue des Hauts-Fourneaux"
+          %li= "L-4362 Esch-sur-Alzette"
+          %li
+            = link_to "http://www.technoport.lu", "9 avenue des Hauts-Fourneaux"
+
       .span3
         %h4= "Location"
         %ul.location
-          %li= "Technoport"
-          %li= "Esch/Belval"
+          %li= "Technoport, Esch/Belval"
+          %li= "9 avenue des Hauts-Fourneaux"
+          %li= "L-4362 Esch-sur-Alzette"
+          %li
+            = link_to "http://www.technoport.lu", "9 avenue des Hauts-Fourneaux"
+
       .span8
-        %h4= "Speakers"
-        %dl.speakers
-          %dt= "Hervé Weitz"
-          %dd= "Sell Your Mess"
+        %h4= "Schedule"
+        %ul.schedule
+          %li= "17:00 - Doors open"
+          %li= "17:30 - Drinks & Networking"
+          %li= "18:45 - Introduction"
+          %li= "19:00 - 20:00 - Presentations"
+          %li= "20:00 - 20:30 - Dinner"
+          %li= "20:30 - 21:30 - Presentations"
+          %li= "21:30 - Drinks & Networking"
+
+      .span8
+        %h4= "Venue"
+        %p
+          :plain
+            <strong>TECHNOPORT<strong> is a technology-oriented business incubator that supports you in the <strong>validation</strong>, <strong>implementation</strong> and <strong>development</strong> of your business idea by allocating human and technical resources to help you achieve your goals.
+            More on <a href="http://www.technoport.lu">www.technoport.lu</a>
+
     %hr.soften.small
 
   .span3
