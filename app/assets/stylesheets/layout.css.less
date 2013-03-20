@@ -228,11 +228,31 @@ dl.speakers dt {
   font-size: 24px;
 }
 
+dl.speakers dt.name {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+dl.speakers dt.name:hover {
+  color: #444444;
+}
+
 dl.speakers dd {
-  margin: 5px 0px 15px 0px;
+  margin: 3px 0px 0px 0px;
   font-size: 16px;
   font-style: italic;
   color: #000000;
+}
+
+dl.speakers dd.bio {
+  display: none;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+dl.speakers dd.abstract {
+  display: none;
+  padding-left: 20px;
 }
 
 .team-contact-icon {

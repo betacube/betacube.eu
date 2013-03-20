@@ -7,6 +7,13 @@ $(document).ready(function() {
   $('.carousel').carousel({
     interval: 3500
   })
+  
+  $("dl.speakers dt.name").each(function() {
+    $(this).click(function(e) {
+      bio_name = $(this).attr("id");
+      $("dl.speakers dd.bio." + bio_name).toggle();
+    });
+  });
 
 });
 
@@ -16,4 +23,3 @@ function replace_team_list_items(item) {
     $(this.children).html('<img src="/assets/icons/' + item + '.png" />');
   });
 }
-

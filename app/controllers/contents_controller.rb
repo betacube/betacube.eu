@@ -22,7 +22,7 @@ private
 
       if result = JSON.parse(open(api_url).read)
         result["user"]["submitted"].each do |meetup|
-          @meetups << Meetup.new_from_json(meetup) if meetup["twitterhandler"] == "betacube"
+          @meetups << Meetup.new_from_json(meetup) if ["betacube", "cbuchler"].include?(meetup["twitterhandler"])
         end
       end
       @meetups = @meetups.compact.sort_by(&:start_date).reverse.partition{|meetup| meetup.start_date < DateTime.now }
