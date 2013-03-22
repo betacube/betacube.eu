@@ -156,7 +156,7 @@ p {
 
 hr.soften {
   height: 1px;
-  margin: 70px 0;
+  margin: 70px 10px;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
@@ -165,7 +165,7 @@ hr.soften {
 }
 
 hr.small {
-  margin: 30px 0px;
+  margin: 50px 10px;
 }
 
 .content-wrap {
@@ -218,6 +218,31 @@ ul.show_and_tell li a, ul.open_source li a {
 ul.location {
   list-style: none;
   margin-left: 15px;
+}
+
+.speakers h2.name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.speakers p.twitter {
+  line-height: 100%;
+  margin-top: 0px;
+}
+
+.speakers h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.speakers h3:before {
+  content: "--- ";
+}
+
+.speakers .abstract {
+  margin-bottom: 35px;
 }
 
 dl.speakers {
@@ -428,4 +453,15 @@ ul.show_and_tell_events > li {
 
 .strong {
   font-weight: bold;
+}
+
+ul.jump {
+  list-style: none;
+  margin: 40px 0px 0px 0px;
+}
+
+ul.jump li {
+  margin: 3px;
+  display: inline;
+  background: #F0F0F0;
 }
