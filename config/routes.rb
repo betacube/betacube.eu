@@ -11,6 +11,7 @@ BetacubeEu::Application.routes.draw do
       "/events/show_and_tell/next",
       "/events/show_and_tell/past/20120419",
       "/events/show_and_tell/past/20120906",
+      "/events/show_and_tell/past/20130418",
       "/events/students_fair",
       "/events/meetups",
       "/events/meetups/past",
