@@ -46,6 +46,14 @@
     %h1= "What's going on"
     %p= "Latest news and happenings."
   .row-fluid.news
+
+    .span4
+      %h4= "Betacube After Work"
+      %p.date= "06.06.2013"
+      .news_content
+        %p= "Come and join us for a casual After-Work drink at the Independent Café in Luxembourg City."
+        %p= "Independent Café - 06.06.2013 @ 7PM"
+
     .span4
       %h4= "May Meetup @ The Impactory"
       %p.date= "22.05.2013"
@@ -64,17 +72,3 @@
       .news_content
         %p= "Betacube is holding their 3rd Show & Tell event at the Technoport (Esch/Belval) at the 18th of April 2013. It's the third edition of this community event giving the community a platform to present their self and connect with like minded web professionals from Luxembourg and the greater region."
       %p= link_to "Show & Tell #3", events_show_and_tell_past_20130418_path, :class => "btn btn-large btn-inverse btn-spanned"
-
-    .span4
-      %h4= "March Meetup @ The Impactory"
-      %p.date= "20.03.2013"
-      .news_content
-        %p= "Save the date! Our march meetup is just around the corner."
-        %p
-          :plain
-            Our next meetup will take place at <a href="http://www.theimpactory.com">The Impactory</a> on the 20th of march at 7PM. We will serve small snacks and drinks.
-            Send an email to <a href="mailto:georges@betacube.eu">Georges</a> if you want to eat a pizza. 10€ per Pizza.
-        %p
-          :plain
-            <strong>March 20th @ 7PM</strong>
-      %p= link_to "Sign up for the march meetup", "http://www.techup.lu/564", :class => "btn btn-large btn-success btn-spanned"
