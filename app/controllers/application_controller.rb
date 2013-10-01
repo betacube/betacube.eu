@@ -15,8 +15,10 @@ class ApplicationController < ActionController::Base
       :home => [],
       :events => [
         :show_and_tell,
-        :meetups,
         :students_fair,
+      ],
+      :meetups => [
+        :hyperlink
       ],
       :about => [],
       :open_source => [],
