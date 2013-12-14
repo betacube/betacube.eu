@@ -8,6 +8,8 @@ BetacubeEu::Application.routes.draw do
       "/about",
       "/contact",
       "meetups/hyperlink",
+      "meetups/hyperlink_1",
+      "meetups/hyperlink_2",
       "/events/show_and_tell",
       "/events/show_and_tell/next",
       "/events/show_and_tell/past/20120419",
