@@ -18,8 +18,8 @@ class ApplicationController < ActionController::Base
         :students_fair,
       ],
       :meetups => [
-        :hyperlink
-        :hyperlink_1
+        :hyperlink,
+        :hyperlink_1,
         :hyperlink_2
       ],
       :about => [],
