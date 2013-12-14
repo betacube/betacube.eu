@@ -19,6 +19,8 @@ class ApplicationController < ActionController::Base
       ],
       :meetups => [
         :hyperlink
+        :hyperlink_1
+        :hyperlink_2
       ],
       :about => [],
       :open_source => [],
