@@ -20,7 +20,8 @@ class ApplicationController < ActionController::Base
       :meetups => [
         :hyperlink,
         :hyperlink_1,
-        :hyperlink_2
+        :hyperlink_2,
+        :hyperlink_3
       ],
       :about => [],
       :open_source => [],
