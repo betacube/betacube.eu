@@ -10,6 +10,7 @@ BetacubeEu::Application.routes.draw do
       "meetups/hyperlink",
       "meetups/hyperlink_1",
       "meetups/hyperlink_2",
+      "meetups/hyperlink_3",
       "/events/show_and_tell",
       "/events/show_and_tell/next",
       "/events/show_and_tell/past/20120419",
