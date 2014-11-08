@@ -21,7 +21,8 @@ class ApplicationController < ActionController::Base
         :hyperlink,
         :hyperlink_1,
         :hyperlink_2,
-        :hyperlink_3
+        :hyperlink_3,
+        :hyperlink_4
       ],
       :about => [],
       :open_source => [],
