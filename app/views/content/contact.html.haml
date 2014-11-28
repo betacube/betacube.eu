@@ -11,11 +11,11 @@
 
     = form_for :contact_form, :url => contact_submit_path, :html => {:class => "form-horizontal"} do |f|
       .control-group
-        %label.control-label= "Firstname"
+        %label.control-label= "First name"
         .controls
           = f.text_field :firstname, :placeholder => "Firstname"
       .control-group
-        %label.control-label= "Lastname"
+        %label.control-label= "Last name"
         .controls
           = f.text_field :lastname, :placeholder => "Lastname"
       .control-group
@@ -28,7 +28,7 @@
           = f.text_area :message, :placeholder => "Message", :rows => 7
       .control-group
         .controls
-          = f.button "Submit", :class => "btn"
+          = f.button "Send Message", :class => "btn"
   .span3.contact_members
     %h4= "Georges Jentgen, President"
     %p.phone= " (+352) 691 11 05 82"
